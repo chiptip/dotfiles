@@ -2,8 +2,13 @@
 export ZSH=$HOME/Workspaces/dotfiles
 
 
-export ZSH_THEME="agnoster" # (this is one of the fancy ones)
+export ZSH_THEME="random" # (this is one of the fancy ones)
 # see https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster
+
+export ZSH_THEME_RANDOM_CANDIDATES=(
+  "robbyrussell"
+  "agnoster"
+)
 
 # your project folder that we can `c [tab]` to
 export PROJECTS=~/Code
@@ -52,3 +57,16 @@ zle -N up-line-or-beginning-search
 zle -N down-line-or-beginning-search
 bindkey "^[[A" up-line-or-beginning-search # Up
 bindkey "^[[B" down-line-or-beginning-search # Down
+
+
+plugins=(
+  git
+  bundler
+  dotenv
+  kubectl
+  pip
+  osx
+  rake
+  rbenv
+  ruby
+)
