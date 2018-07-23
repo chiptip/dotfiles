@@ -18,6 +18,8 @@ function proxy_on(){
    # environment variables are UPPERCASE even in git bash
    export HTTP_PROXY="http://localhost:3128"
    export HTTPS_PROXY=$HTTP_PROXY
+   export http_proxy=$HTTP_PROXY
+   export https_proxy=$HTTP_PROXY
    export FTP_PROXY=$HTTP_PROXY
    export SOCKS_PROXY=$HTTP_PROXY
 
@@ -40,7 +42,7 @@ function proxy_on(){
    export GIT_SSL_NO_VERIFY=1
 
 
-   env | grep -e _PROXY -e GIT_ | sort
+   env | grep -e _PROXY -e GIT_ -e proxy | sort
    echo -e "\nProxy-related environment variables set."
 
    # clear
@@ -51,6 +53,7 @@ function proxy_off(){
    variables=( \
       "HTTP_PROXY" "HTTPS_PROXY" "FTP_PROXY" "SOCKS_PROXY" \
       "NO_PROXY" "GIT_CURL_VERBOSE" "GIT_SSL_NO_VERIFY" \
+      "http_proxy" "https_proxy"
    )
 
    for i in "${variables[@]}"
