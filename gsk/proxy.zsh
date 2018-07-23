@@ -67,7 +67,7 @@ function proxy_off(){
 # obtain network location
 location=$(networksetup -getcurrentlocation)
 
-if [ "$location" = "GSk" ]; then
+if [ "$location" = "GSK" ]; then
    proxy_on
 else
    proxy_off
