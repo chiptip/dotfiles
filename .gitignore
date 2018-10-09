@@ -12,3 +12,13 @@ atom.symlink/recovery
 git/gitconfig.local.symlink
 
 secret.*
+
+
+# for gradle
+build-scan-data/
+caches/
+daemon/
+native/
+notifications/
+wrapper/
+
