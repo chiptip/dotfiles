@@ -16,14 +16,14 @@ function proxy_on(){
    # are existing Windows current user-level environment variables (your user)
 
    # environment variables are UPPERCASE even in git bash
-   export HTTP_PROXY="http://localhost:3128"
+   export HTTP_PROXY="http://127.0.0.1:3128"
    export HTTPS_PROXY=$HTTP_PROXY
    export http_proxy=$HTTP_PROXY
    export https_proxy=$HTTP_PROXY
    export FTP_PROXY=$HTTP_PROXY
    export SOCKS_PROXY=$HTTP_PROXY
 
-   export NO_PROXY="localhost,127.0.0.1,$USERDNSDOMAIN"
+   export NO_PROXY="localhost,127.0.0.1"
 
    # Update git and npm to use the proxy
    # git config --global http.proxy $HTTP_PROXY
