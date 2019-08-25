@@ -41,6 +41,10 @@ done
 autoload -U compinit
 compinit
 
+# initialize autocomplete for bash
+autoload -U +X bashcompinit
+bashcompinit
+
 # load every completion after autocomplete loads
 for file in ${(M)config_files:#*/completion.zsh}
 do
