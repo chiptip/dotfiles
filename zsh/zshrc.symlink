@@ -65,15 +65,25 @@ bindkey "^[[B" down-line-or-beginning-search # Down
 
 plugins=(
   git
+  brew
   bundler
+  cask
+  django
   dotenv
+  heroku
   kubectl
+  git
+  gitub
+  gitignore
+  iterm2
   mvn
   pep8
   pip
+  postgres
   pylint
   python
   osx
+  sudo
   rake
   rbenv
   ruby
