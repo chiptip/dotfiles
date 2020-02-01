@@ -1,0 +1,1 @@
+export PATH=~/Downloads/azcopy_darwin_amd64_10.3.4:$PATH
