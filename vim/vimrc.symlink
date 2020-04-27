@@ -4,3 +4,9 @@ set number
 
 " Wrap gitcommit file types at the appropriate length
 filetype indent plugin on
+
+" powerline
+set rtp+=/usr/local/lib/python3.7/site-packages/powerline/bindings/vim
+set laststatus=2
+set t_Co=256
+
