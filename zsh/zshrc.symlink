@@ -2,16 +2,16 @@
 export ZSH=$HOME/Workspaces/dotfiles
 
 
-export ZSH_THEME="random" # (this is one of the fancy ones)
+export ZSH_THEME="powerline" # (this is one of the fancy ones)
 # see https://github.com/robbyrussell/oh-my-zsh/wiki/Themes#agnoster
 
-export ZSH_THEME_RANDOM_CANDIDATES=(
-  "robbyrussell"
-  "agnoster"
-)
+# export ZSH_THEME_RANDOM_CANDIDATES=(
+#   "robbyrussell"
+#   "agnoster"
+# )
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Code
+export PROJECTS=~/Workspaces
 
 # Stash your environment variables in ~/.localrc. This means they'll stay out
 # of your main dotfiles repository (which may be public, like this one), but
